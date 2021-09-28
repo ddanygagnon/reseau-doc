@@ -39,3 +39,18 @@ Pour faire les mises à jour du système, il faut faire un update et faire un up
 ```console
     $ shutdown -h now
 ```
+
+## Faire un snapshot
+Pour faire un snapshot, il faut s'assurer que la machine virtuelle est fermé pour éviter de faire un snapshot live.
+
+1. Dans le menu de la VM, il faut aller dans `Take Snapshot...`
+
+![](img/vmware_xfwZuN0JWr.png)
+
+*Figure 4 - Capture d'écran qui montre le menu pour prendre le snapshot*
+
+![](img/vmware_DAUVz7i8Be.png)
+
+*Figure 5 - Capture d'écran qui montre que le snapshot a bien été pris*
+
+## Configurer la machine

@@ -124,3 +124,11 @@ et le pays pour le **Canada**
 *Figure 10 - Ma configuration de clavier, language et region*
 
 ## Configurer le mode pont (bridge)
+
+Se connecter sur directement au network physique
+
+![](img/vmware_Bwxn2Lb390.png)
+
+*Figure 11 - Configuration du mode pont sur l'application VMWare*
+
+## Installer et configurer le serveur SSH

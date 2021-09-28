@@ -1,5 +1,5 @@
 # Devoir semaine 4
-autheur: Dany Gagnon
+**Auteur**: Dany Gagnon
 
 ## Créer une machine virtuelle
 0. Le liens pour télécharger [Ubuntu 20.04.3](https://ubuntu.com/download/desktop/thank-you?version=20.04.3&architecture=amd64) (iso)
@@ -21,3 +21,21 @@ autheur: Dany Gagnon
 
 **ps**: `CTRL + ALT` permet de sortir de la VM
 
+7. Login sur le compte
+8. Skip, next, next, don't send info, next, next, done.
+9. Enlever les applications inutiles dans la barre des favoris.
+
+## Faire les mises à jour
+Pour faire les mises à jour du système, il faut faire un update et faire un upgrade.
+
+```console
+    # apt update && apt upgrade
+```
+
+![](img/vmware_VuVQFBfjfb.png)
+
+*Figure 3 - Capture d'écran qui montre la commande pour effectuer les mises à jours*
+
+```console
+    $ shutdown -h now
+```

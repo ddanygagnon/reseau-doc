@@ -54,3 +54,73 @@ Pour faire un snapshot, il faut s'assurer que la machine virtuelle est fermé po
 *Figure 5 - Capture d'écran qui montre que le snapshot a bien été pris*
 
 ## Configurer la machine
+
+### Hostname
+Pour vérifier le hostname, on utilise la commande
+
+```console
+    $ hostname
+```
+
+![](img/vmware_egP0Ms0b8o.png)
+
+*Figure 6 - Capture d'écran pour montrer le hostname par défaut*
+
+Par défaut, le hostname d'une nouvelle machine virtuelle est ubuntu. On va changer ça pour mon DA: 1679863
+
+1. On va modifier le fichier hostname dans /etc
+
+```console
+    # nano /etc/hostname
+```
+
+**ps**: `CTRL + S` pour enregistrer et `CTRL + X` pour quitter nano
+
+2. On va modifier le fichier hosts dans /etc pour changer l'ancien hostname pour le nouveau.
+
+```console
+    # nano /etc/hosts
+```
+
+![](img/vmware_WJ7ThZkXp1.png)
+
+*Figure 7 - Capture pour montrer mon fichier /etc/hosts*
+
+3. Ensuite reboot la machine en utilisant la commande
+
+```console
+    $ reboot
+```
+
+**Maintenant, le hostname est changé pour 1679863**
+
+![](img/vmware_k4bS87ezLE.png)
+
+*Figure 8 - Preuve du nouveau hostname*
+
+### Fuseau horaire
+Pour changer le fuseau horaire, on va utiliser la commande
+```console
+    $ timedatectl set-timezone America/Toronto
+```
+
+Ensuite pour vérifier les changement on va utiliser la commande
+
+```console
+    $ timedatectl
+```
+
+![](img/vmware_RxutAFm15v.png)
+
+*Figure 9 - S'assurer que le timezone correspond au notre*
+
+### Disposition du clavier
+Pour la disposition et les autres paramètres, j'aime bien avoir deux clavers, un en anglais et l'autre en français pour les accents.
+Je me suis habituer à changer mon clavier quand j'ai besoin de faire des accents avec les touches de raccourcis. On s'assure de mettre le format
+et le pays pour le **Canada**
+
+![](img/vmware_X0AR2ndC8d.png)
+
+*Figure 10 - Ma configuration de clavier, language et region*
+
+## Configurer le mode pont (bridge)

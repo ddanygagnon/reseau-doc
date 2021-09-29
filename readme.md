@@ -132,3 +132,47 @@ Se connecter sur directement au network physique
 *Figure 11 - Configuration du mode pont sur l'application VMWare*
 
 ## Installer et configurer le serveur SSH
+
+Il faut s'assurer d'installer le package openssh-server (avec la commande)
+
+```console
+    # apt-get install openssh-server 
+```
+
+![](img/vmware_DUREEdblsY.png)
+
+*Figure 12 - Image montrant que le status SSH est active et en marche*
+
+## Créer un compte avec le DA / Connection SSH
+
+On va ajouter un utilisateur sur l'ordinateur, car le mode Bridge me donnais l'erreur, `network activation failed`
+
+```console
+    # adduser u<da>
+```
+
+![](img/vmware_tofg31OxYp.png)
+
+*Figure 13 - Image montrant un nouvel utilisateur ajouté*
+
+![](img/putty_jJJ9dfMTuY.png)
+
+*Figure 14 - Image qui montre que je me suis connecté en SSH sur l'utilisateur danygagnon*
+
+![](img/putty_bZLp2MRloo.png)
+
+*Figure 15 - Image qui montre que je me suis connecté en SSH sur l'utilisateur u1679863*
+
+Ensuite je me suis créer une autre machine virtuelle, car je n'est pas d'amis 😢
+
+Je me suis connecté en SSH sur ma première VM avec la commande
+
+```console
+    $ ssh u1679863@192.168.80.129
+```
+
+et en entrant le mots de passe de base.
+
+![](img/vmware_In18kqCvgz.png)
+
+*Figure 16 - Image qui montre ma deuxième VM qui se connecte à ma première VM*
